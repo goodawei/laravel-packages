@@ -23,4 +23,10 @@ class PayTest extends TestCase
         $passTwo = $this->attr->payMake('lhw');
         $this->assertEquals($pass,$passTwo);
     }
+
+    public function testPayCheck(){
+        $from = $this->attr->payMake('lhw',['salt'=>'cxx']);
+        $to   = md5('lhwcxx');
+        $this->assertEquals($from,$to);
+    }
 }
