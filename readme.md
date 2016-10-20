@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/goodawei/laravel-packages.svg?branch=master)](https://travis-ci.org/goodawei/laravel-packages)
 # Api 支付扩展包
 
 > 用法
