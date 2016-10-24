@@ -13,7 +13,9 @@ class PayProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $this->publishes([
+            __DIR__.'/config/pay.php' => config_path('pay.php'),
+        ]);
     }
 
     /**
